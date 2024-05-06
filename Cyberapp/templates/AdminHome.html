@@ -1,0 +1,31 @@
+{% extends 'head3_tail3.html' %}
+
+{% block admin_home %}
+<center>
+<h1 style="color:black;">WELCOME, ADMIN</h1></center>
+
+   <br><br><br><br>    
+<div style="display: flex; justify-content: space-between; align-items: center;">
+   <div style="text-align: center;">
+       <a href="/Viewuser">
+           <img src="/static/new/uprof.jpg" width="240px" height="210px" style="display: block;margin-top: 50px;">
+       </a>
+       <h4 style="margin-top: 10px;">VIEW USERS</h4>
+   </div>
+
+   <div style="text-align: center;">
+       <a href="/Viewfeedback">
+           <img src="/static/gifs/sendmail.gif" width="240px" height="210px" style="display: block;margin-top: 50px;">
+       </a>
+       <h4 style="margin-top: 10px;"> VIEW FEEDBACK</h4>
+   </div>
+</div>
+
+
+
+<script type="text/javascript">
+   function preventBack() { window.history.forward(); }
+   setTimeout("preventBack()", 0);
+   window.onunload = function () { null };
+ </script>
+{% endblock %}

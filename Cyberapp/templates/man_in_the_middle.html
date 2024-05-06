@@ -1,0 +1,53 @@
+{% extends 'head2_tail2.html' %}
+
+{% block man_in_the_middle %}
+
+<html>
+<body>
+
+<center>
+    <div style="background-color: white; padding: 20px; border-radius: 10px;">
+        <h2 style="color: black;">Man-in-the-Middle Attacks</h2>
+        <p style="color: black;">
+            A Man-in-the-Middle (MitM) attack occurs when a malicious actor intercepts communication between two parties without their knowledge.
+            This type of attack can compromise the confidentiality, integrity, and authenticity of the communication.
+            In a typical MitM attack scenario, the attacker positions themselves between the sender and receiver, capturing and possibly modifying the transmitted data.
+            MitM attacks can target various communication channels, including email, instant messaging, web browsing, and voice calls.
+            The goal of the attacker may be to eavesdrop on sensitive information, manipulate data, or impersonate one of the parties involved.
+            MitM attacks are particularly concerning in public Wi-Fi networks, where data transmissions are often unencrypted and vulnerable to interception.
+        </p>
+        <br><br>
+        <h2 style="color: black;">Preventing MitM Attacks</h2>
+        <p style="color: black;">
+            There are several measures organizations and individuals can take to mitigate the risk of MitM attacks: <br>
+                Use encrypted communication protocols such as HTTPS, SSL/TLS, and SSH to secure data transmission.<br>
+                Avoid connecting to unsecured public Wi-Fi networks, especially when transmitting sensitive information.<br>
+                Regularly update software and operating systems to patch known vulnerabilities that could be exploited by attackers.<br>
+                Implement strong authentication mechanisms, such as two-factor authentication (2FA), to prevent unauthorized access to accounts.<br>
+                Educate users about the risks of MitM attacks and encourage them to exercise caution when sharing sensitive information online.<br>
+            
+        </p>
+        <br><br>
+        <h2 style="color: black;">Detecting MitM Attacks</h2>
+        <p style="color: black;">
+            Detecting MitM attacks can be challenging due to their covert nature, but organizations can employ the following strategies:
+            <ul style="color: black;">
+                <li>Monitor network traffic for anomalies, such as unexpected redirections or unauthorized access attempts.</li>
+                <li>Implement intrusion detection systems (IDS) and intrusion prevention systems (IPS) to identify and block suspicious activity.</li>
+                <li>Use network segmentation to isolate sensitive systems and limit the impact of potential MitM attacks.</li>
+                <li>Conduct regular security assessments and penetration testing to identify and address vulnerabilities in the network infrastructure.</li>
+            </ul>
+        </p>
+    </div>
+    
+
+</center>
+
+</body>
+</html>
+<script type="text/javascript">
+    function preventBack() { window.history.forward(); }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+  </script>
+{% endblock %}

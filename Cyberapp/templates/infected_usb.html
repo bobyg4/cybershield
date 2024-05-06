@@ -1,0 +1,54 @@
+{% extends 'head2_tail2.html' %}
+
+{% block ddos %}
+
+<html>
+<body>
+
+<center>
+  <div style="background-color: white; padding: 20px; border-radius: 10px;">
+    <h2 style="color: black;">Infected USB Drives - Risks and Prevention</h2>
+    <p style="color: black;">
+        Infected USB drives pose significant risks to computer systems and networks by spreading malware and other malicious software.
+        USB drives, also known as thumb drives or flash drives, are portable storage devices that can be easily connected to computers for data transfer and storage.
+        However, they can also serve as vehicles for malware transmission if infected with malicious code.
+        Malicious actors may distribute infected USB drives through social engineering tactics, such as leaving them in public places or sending them as gifts.
+        Once inserted into a computer, infected USB drives can execute malware payloads, compromise system security, and facilitate unauthorized access to sensitive data.
+    </p>
+    <br><br>
+    <h2 style="color: black;">Common Risks of Infected USB Drives</h2>
+    <p style="color: black;">
+        Infected USB drives can pose various risks to computer systems and networks, including:
+        <ul style="color: black;">
+            <li><b>Malware Distribution:</b> Infected USB drives can spread malware infections, including viruses, worms, Trojans, ransomware, and spyware, to connected computers.</li>
+            <li><b>System Compromise:</b> Malicious code executed from infected USB drives can compromise system security, steal sensitive information, and disrupt normal operations.</li>
+            <li><b>Network Vulnerabilities:</b> Infected USB drives connected to networked computers can introduce vulnerabilities and serve as entry points for attackers to infiltrate network environments.</li>
+            <li><b>Data Loss:</b> Malware infections from infected USB drives can lead to data loss, corruption, or encryption, resulting in permanent damage to stored files and documents.</li>
+            <li><b>Financial Loss:</b> Infected USB drives may cause financial losses for organizations through downtime, data recovery costs, regulatory fines, and reputational damage.</li>
+        </ul>
+    </p>
+    <br><br>
+    <h2 style="color: black;">Preventing Infected USB Drive Attacks</h2>
+    <p style="color: black;">
+        To prevent infected USB drive attacks and mitigate associated risks, users and organizations should implement the following security measures:
+        <ul style="color: black;">
+            <li><b>Use Trusted Sources:</b> Only use USB drives obtained from trusted sources and avoid connecting unknown or unverified devices to your computer.</li>
+            <li><b>Scan USB Drives:</b> Use antivirus or antimalware software to scan USB drives for malware before opening or accessing files stored on them.</li>
+            <li><b>Enable Auto-Scan:</b> Configure antivirus software to automatically scan USB drives when they are inserted into your computer to detect and remove any potential threats.</li>
+            <li><b>Update Software:</b> Keep your operating system, antivirus software, and security patches up to date to protect against known vulnerabilities exploited by malware.</li>
+            <li><b>Practice Safe Handling:</b> Avoid sharing USB drives with others, and do not insert unknown USB drives into your computer without scanning them for malware first.</li>
+            <li><b>Educate Users:</b> Educate users about the risks of infected USB drives and the importance of practicing safe USB drive handling and data security protocols.</li>
+        </ul>
+    </p>
+</div>
+
+</center>
+
+</body>
+</html>
+<script type="text/javascript">
+    function preventBack() { window.history.forward(); }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+  </script>
+{% endblock %}

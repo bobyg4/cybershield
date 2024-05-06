@@ -1,0 +1,63 @@
+{% extends 'head2_tail2.html' %}
+
+{% block phishing %}
+
+<html>
+<body>
+
+<center>
+    <div style="background-color: white; padding: 20px; border-radius: 10px;">
+        <h2 style="color: black;">Phishing Attacks</h2>
+        <p style="color: black;">
+            Phishing attacks are fraudulent attempts to deceive individuals into divulging sensitive information, such as passwords, credit card numbers, or personal identification.
+            Typically, attackers masquerade as trustworthy entities, often via email, instant messages, or fake websites, to trick victims into providing confidential data or clicking on malicious links.
+            Phishing attacks can have severe consequences, including identity theft, financial loss, and unauthorized access to sensitive accounts.
+            These attacks exploit human vulnerabilities, relying on social engineering tactics to manipulate victims into taking actions that benefit the attackers.
+        </p>
+        <br><br>
+        <h2 style="color: black;">Common Types of Phishing Attacks</h2>
+        <p style="color: black;">
+            Phishing attacks can take various forms, including:
+            <ul style="color: black;">
+                <li><b>Email Phishing:</b> Attackers send deceptive emails pretending to be from legitimate organizations, urging recipients to click on malicious links or provide sensitive information.</li>
+                <li><b>Smishing:</b> Similar to email phishing, but conducted via SMS or text messages, often containing links to fake websites or instructions to call fraudulent phone numbers.</li>
+                <li><b>Pharming:</b> Attackers redirect victims to fraudulent websites by compromising DNS servers or using malicious software to manipulate host files.</li>
+                <li><b>Spear Phishing:</b> Targeted phishing attacks directed at specific individuals or organizations, often using personalized messages and information obtained from social media or other sources.</li>
+            </ul>
+        </p>
+        <br><br>
+        <h2 style="color: black;">Preventing Phishing Attacks</h2>
+        <p style="color: black;">
+            Organizations and individuals can take several steps to prevent falling victim to phishing attacks:
+            <ul style="color: black;">
+                <li>Exercise caution when clicking on links or downloading attachments in emails or messages, especially from unknown or suspicious senders.</li>
+                <li>Verify the authenticity of websites by checking for secure connections (HTTPS) and examining website URLs for inconsistencies or misspellings.</li>
+                <li>Implement email filtering and spam detection mechanisms to identify and block phishing attempts before they reach recipients' inboxes.</li>
+                <li>Educate employees and users about phishing techniques and encourage them to report suspicious emails or messages to IT security personnel.</li>
+                <li>Regularly update security software and systems to protect against known vulnerabilities and malware used in phishing attacks.</li>
+            </ul>
+        </p>
+        <br><br>
+        <h2 style="color: black;">Responding to Phishing Attacks</h2>
+        <p style="color: black;">
+            In the event of a phishing attack, prompt action is essential to minimize damage and prevent further exploitation:
+            <ul style="color: black;">
+                <li>Immediately change passwords for compromised accounts and enable multi-factor authentication (MFA) where available.</li>
+                <li>Report phishing incidents to relevant authorities, such as IT security teams, internet service providers (ISPs), or law enforcement agencies.</li>
+                <li>Inform affected individuals and stakeholders about the incident and provide guidance on identifying and avoiding phishing attempts in the future.</li>
+                <li>Conduct post-incident analysis to identify gaps in security controls and implement measures to prevent similar attacks in the future.</li>
+            </ul>
+        </p>
+    </div>
+    
+
+</center>
+
+</body>
+</html>
+<script type="text/javascript">
+    function preventBack() { window.history.forward(); }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+  </script>
+{% endblock %}

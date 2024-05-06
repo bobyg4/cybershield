@@ -1,0 +1,64 @@
+{% extends 'head2_tail2.html' %}
+
+{% block keylogger %}
+
+<html>
+<body>
+
+<center>
+    <div style="background-color: white; padding: 20px; border-radius: 10px;">
+        <h2 style="color: black;">Keylogger Attacks</h2>
+        <p style="color: black;">
+            Keylogger attacks, also known as keystroke logging, involve malicious software or hardware that records the keystrokes typed by a user on a keyboard.
+            These keystrokes can include sensitive information such as passwords, credit card numbers, and personal messages.
+            Keyloggers can be installed on infected computers without the user's knowledge, either through malware infections, phishing attacks, or physical access to the device.
+            Once installed, keyloggers silently capture and transmit the recorded keystrokes to remote servers controlled by attackers.
+            The data collected by keyloggers can be used for identity theft, financial fraud, espionage, and other malicious activities.
+        </p>
+        <br><br>
+        <h2 style="color: black;">Types of Keyloggers</h2>
+        <p style="color: black;">
+            Keyloggers can be categorized into two main types based on their functionality:
+            <ul style="color: black;">
+                <li><b>Software Keyloggers:</b> These keyloggers are software-based and typically installed on computers as part of malware infections or malicious applications.</li>
+                <li><b>Hardware Keyloggers:</b> These keyloggers are physical devices that are connected between the keyboard and the computer, intercepting keystrokes before they reach the operating system.</li>
+            </ul>
+        </p>
+        <br><br>
+        <h2 style="color: black;">Detecting and Preventing Keylogger Attacks</h2>
+        <p style="color: black;">
+            Detecting and preventing keylogger attacks requires a combination of security measures and user vigilance:
+            <ul style="color: black;">
+                <li>Use reputable antivirus software and keep it up to date to detect and remove keylogger malware infections.</li>
+                <li>Regularly scan your system for suspicious processes or applications that may indicate the presence of keyloggers.</li>
+                <li>Avoid downloading software or files from untrusted sources, as they may contain hidden keylogger payloads.</li>
+                <li>Be cautious when clicking on links or attachments in emails or messages, as they may lead to phishing sites or malware downloads.</li>
+                <li>Physically inspect devices for hardware keyloggers, especially in public places such as internet cafes or shared workspaces.</li>
+                <li>Consider using privacy screens or keyboard overlays to protect against visual surveillance and hardware keyloggers.</li>
+            </ul>
+        </p>
+        <br><br>
+        <h2 style="color: black;">Mitigating the Risks of Keylogger Attacks</h2>
+        <p style="color: black;">
+            In addition to preventive measures, organizations and individuals can take steps to mitigate the risks associated with keylogger attacks:
+            <ul style="color: black;">
+                <li>Implement strong access controls and user authentication mechanisms to limit access to sensitive systems and data.</li>
+                <li>Encrypt sensitive data, such as passwords and confidential documents, to protect them from unauthorized access in the event of a keylogger attack.</li>
+                <li>Regularly monitor system logs and network traffic for signs of suspicious activity or unauthorized access attempts.</li>
+                <li>Educate employees and users about the risks of keylogger attacks and the importance of practicing good security hygiene.</li>
+                <li>Consider using virtual keyboards or password managers to minimize the risk of keystroke logging on shared or public computers.</li>
+            </ul>
+        </p>
+    </div>
+    
+
+</center>
+
+</body>
+</html>
+<script type="text/javascript">
+    function preventBack() { window.history.forward(); }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+  </script>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends 'head3_tail3.html' %}
+
+{% block inbox_view %}
+
+<html>
+
+<body>
+  <center>
+
+
+    <div
+      style="width:97%;margin:(0px,0px);padding:0px; height:650px;background-image: url(\\static\\bg3.gif);background-repeat:no-repeat;background-position:center;background-size:cover;">
+
+      <br><br>
+      <center>
+
+        <div
+          style="width:90%;height:550px;background-color: white;float:center;background-position:center;background-repeat:no-repeat;">
+
+
+
+          <div
+            style="width:85%;height:500px;background-color:white;float:left;background-position:center;background-repeat:no-repeat;">
+            <center><br><br>
+
+              <table style="color:black;width:800px;margin-left:20px;" cellpadding="10" class="table">
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Experience</th>
+                  <th>Rating</th>
+                  <th>Comments</th>
+                  <th>Action</th>
+                </tr>
+
+                {% for d in data %}
+
+                <tr>
+                  <td>{{d.0}}</td>
+                  <td>{{d.1}}</td>
+                  <td>{{d.2}}</td>
+                  <td>{{d.3}}</td>
+                  <td>{{d.4}}</td>
+                  {% if d.5 == "noreply" %}
+                  <td><a href="/replyFeedback?id={{d.6}}">Reply</a></td>
+                  {% else %}
+                  <td>{{d.5}}</td>
+                  {% endif %}
+                </tr>
+                {% endfor %}
+
+              </table>
+            </center>
+
+          </div>
+
+          <div
+            >
+            <br><br>
+
+
+
+            {% block msg_reply %}
+
+            {% endblock %}
+
+          </div>
+
+        </div>
+
+      </center>
+    </div>
+
+  </center>
+</body>
+
+</html>
+
+{% endblock %}

@@ -1,0 +1,83 @@
+
+{% extends 'head2_tail2.html' %}
+
+{% block reply_view %}
+
+<!-- <html>
+<body><center>
+
+-->
+<div style="width:97%;margin:(0px,0px);padding:0px; height:650px;background-image: url(\\static\\bg3.gif);background-repeat:no-repeat;background-position:center;background-size:cover;"> 
+
+<br><br>
+<center>
+
+<div style="width:90%;height:550px;background-color: white;float:center;background-position:center;background-repeat:no-repeat;">
+ 
+
+<<h1 style="color:black; margin-left: -20px;"><b>REPLIES</b></h1>
+  
+     <center><br><br>
+
+        <table style="color:black;width:600px;margin-left:20px;" cellpadding="10"  class="table"> 
+            <tr>
+                <th>From</th>
+                
+                <th>File Name</th>
+                <th align="center"style="width: 520px;">File Type</th>
+                <th>Date</th>
+                <th>Message</th>
+            </tr> 
+    
+
+        {% for d in data %}
+        
+        <for>
+        
+        <td>{{d.1}}</td>
+       
+        <td><a href="media/{{d.3}}" download>{{d.3}}</a></td>
+        <td>{{d.4}}</td>
+        <td>{{d.5}}</td>
+        <td>{{d.6}}</td>
+         </tr>
+
+        {% endfor %}
+         
+        </table></center>
+
+    </div>
+  
+ <div style="float:left;background-position:center;background-repeat:no-repeat;">
+   <br><br>
+
+   
+  
+     {% block msg_reply %}
+
+     {% endblock %}
+
+ </div>
+
+</div>
+
+</center>
+</div>
+<style>
+.table th,
+.table td {
+  
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+</style>
+<!-- 
+</center></body>
+</html> -->
+<script type="text/javascript">
+  function preventBack() { window.history.forward(); }
+  setTimeout("preventBack()", 0);
+  window.onunload = function () { null };
+</script>
+{% endblock %}
+

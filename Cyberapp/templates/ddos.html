@@ -1,0 +1,47 @@
+{% extends 'head2_tail2.html' %}
+
+{% block ddos %}
+
+<html>
+<body>
+
+<center>
+  <div style="background-color: white; padding: 20px; border-radius: 10px;">
+    <h2 style="color: black;">DDOS - DISTRIBUTED DENIAL OF SERVICE ATTACK</h2>
+    <p style="color: black;">
+        A Distributed Denial of Service (DDoS) attack is like a crowd of people overwhelming a store's entrance during a sale, making it impossible for customers to enter. 
+        In computing, it means a hacker floods your website with fake traffic, causing it to crash or become unavailable.
+        DDoS attacks are launched through botnets from multiple computers in various locations, using up bandwidth and making the system unavailable.
+        The reasons behind these attacks could be blackmail, revenge, extortion, vandalism, or hacktivism.
+        These attacks not only disrupt your services but also damage your reputation and revenue.
+        Organizations of all sizes are vulnerable to DDoS attacks, and they can occur at any time without warning.
+    </p>
+    <br><br>
+    <h2 style="color: black;">Not all DDoS attacks are malicious</h2>
+    <p style="color: black;">
+        Sometimes, your website or blog might unintentionally attract a surge in legitimate users, causing your web application to become overwhelmed.
+        This issue typically affects small and medium-size online stores during peak shopping periods like Black Friday or Cyber Monday.
+        However, distinguishing between legitimate traffic and malicious attacks can be challenging.
+        It is essential to have robust monitoring systems in place to detect and mitigate any unexpected spikes in traffic.
+        Additionally, proactive planning and scalability measures can help minimize the impact of sudden surges in visitors.
+    </p>
+    <br><br>
+    <h2 style="color: black;">How to tell if you’re a victim of DoS</h2>
+    <p style="color: black;">
+        If your website suddenly becomes slow or displays a 'service unavailable' message, you might be dealing with a DDoS attack.
+        Since these attacks are often distributed across multiple locations and IP addresses, blocking individual sources may not be effective.
+        Instead, it is crucial to monitor your network traffic for abnormal patterns and seek assistance from your Internet Service Provider (ISP) or DDoS mitigation service.
+        Prompt action is essential to minimize downtime and restore normal operations.
+    </p>
+</div>
+
+</center>
+
+</body>
+</html>
+<script type="text/javascript">
+    function preventBack() { window.history.forward(); }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+  </script>
+{% endblock %}

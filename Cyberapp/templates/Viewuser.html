@@ -1,0 +1,72 @@
+
+{% extends 'head3_tail3.html' %}
+
+{% block inbox_view %}
+
+<html>
+<body><center>
+
+
+<div style="overflow :auto;">
+
+<br><br>
+<center>
+
+<div style="width:90%;height:550px;background-color: white;float:center;background-position:center;background-repeat:no-repeat;">
+
+
+
+  <div style="width:75%;height:550px;background-color:white;float:left;background-position:center;background-repeat:no-repeat;">
+     <center><br><br>
+
+        <table style="color:black;width:600px;margin-left:20px;" cellpadding="10"  class="table">  
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+           
+            <th>Action</th>
+        </tr>
+        {% for d in data %}
+
+        <tr>
+          <td>{{d.0}}</td>
+          <td>{{d.1}}</td>
+          <td>{{d.2}}</td>
+          {% if d.5 == 0 %}
+              <td><a href="/Approve?id={{d.4}}">Approve</a></td>
+          {% else %}
+              <td>Approved</td>
+          {% endif %}
+      </tr>
+      
+        {% endfor %}
+         
+        </table></center>
+
+    </div>
+  
+ <div style="width:25%;height:550px;background-color: white;float:left;background-position:center;background-repeat:no-repeat;">
+   <br><br>
+
+   
+  
+     {% block msg_reply %}
+
+     {% endblock %}
+
+ </div>
+
+</div>
+
+</center>
+</div>
+
+</center></body>
+</html>
+<script type="text/javascript">
+  function preventBack() { window.history.forward(); }
+  setTimeout("preventBack()", 0);
+  window.onunload = function () { null };
+</script>
+{% endblock %}
